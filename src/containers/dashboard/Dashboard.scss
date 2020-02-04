@@ -1,0 +1,64 @@
+@import "../../base.scss";
+
+.dashboard {
+  .dashboard-summary {
+    // background-image: url("./hero5.png");
+    background-position: 0px -150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-width: 1900px) {
+      background-position: 0 -250px;
+    }
+    background-repeat: no-repeat;
+    height: 238px;
+    padding-top: 80px;
+    padding-left: 50px;
+
+    .title-main {
+      @include main-title;
+    }
+    .title-sub {
+      @include sub-title;
+    }
+  }
+
+  .dashboard-details {
+    padding-top: 55px;
+    display: flex;
+    box-shadow: 0 2px 5px 0 rgba(187, 189, 191, 0.7);
+    .details-section-title {
+      @include regular-title;
+    }
+    .details-section {
+      padding-left: 55px;
+      width: 30%;
+
+      .hl {
+        padding: 0 70px 0 30px;
+        .hl-line {
+          border-bottom: 1px solid $separator;
+          width: 95%;
+        }
+      }
+    }
+    .garph-section {
+      padding-left: 55px;
+    }
+    .vl {
+      border-left: 1px solid $separator;
+      height: 300px;
+      margin: 10px 0;
+      padding: 0 10px;
+    }
+  }
+
+  .dashboard-bottom {
+    background-color: $background;
+    height: 100px;
+  }
+}
+
+.apexcharts-legend-series {
+  margin: 5px 5px !important;
+}

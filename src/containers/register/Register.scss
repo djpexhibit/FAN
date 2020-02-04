@@ -1,0 +1,17 @@
+@import "../../base.scss";
+
+.register {
+  display: grid;
+  @media (min-width: $tablet) {
+    grid-template-columns: 50% 50%;
+  }
+
+  column-gap: 2rem;
+  align-items: center;
+  height: 100vh;
+
+  padding: 0 3rem;
+
+  .right-panel {
+  }
+}

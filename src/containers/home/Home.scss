@@ -1,0 +1,31 @@
+@import "../../base.scss";
+
+.home {
+  display: grid;
+  @media (min-width: $tablet) {
+    grid-template-columns: 50% 50%;
+  }
+  column-gap: 2rem;
+  align-items: center;
+  height: 100vh;
+
+  padding: 0 3rem;
+
+  .left-panel {
+    .main-button-round {
+      width: 100%;
+
+      @media (min-width: $tablet) {
+        width: 70%;
+      }
+      height: 55px;
+      margin-top: 50px;
+      color: $m-blue;
+      background-color: $white;
+      border: 1px dashed $m-blue;
+      border-radius: 10em;
+      font-size: 18px;
+      cursor: pointer;
+    }
+  }
+}

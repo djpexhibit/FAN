@@ -1,0 +1,83 @@
+@import "./colors";
+@import "./typography";
+@import "./breakpoints";
+
+@mixin main-title {
+  font-size: $xlarge-font-size;
+  color: $m-blue;
+  font-weight: bold;
+  letter-spacing: 2.25px;
+}
+
+@mixin sub-title {
+  font-size: $large-font-size;
+  color: $m-blue;
+  font-weight: normal;
+  letter-spacing: 1.5px;
+}
+
+@mixin regular-title {
+  font-size: $body-font-size;
+  color: $m-blue;
+  letter-spacing: 1.13px;
+  font-weight: 500;
+}
+
+@mixin faded-title {
+  font-size: $body-font-size;
+  color: $m-blue;
+  letter-spacing: 1.13px;
+  font-weight: 500;
+}
+
+@mixin body-large {
+  font-size: $body-large-font-size;
+  font-weight: bold;
+}
+
+form {
+  .form-label {
+    width: 90%;
+    padding-top: 20px;
+    font-size: $small-font-size;
+    color: $m-blue;
+  }
+
+  .form-field {
+    input {
+      border-color: transparent;
+      border-bottom: 1px solid black;
+      color: $i-text;
+      font-size: 18px;
+      width: 90%;
+      padding-top: 10px;
+      padding-bottom: 5px;
+      outline: none;
+      background-color: $white;
+    }
+
+    &.select {
+      color: $i-text;
+      font-size: 18px;
+      width: 50%;
+      padding-top: 10px;
+      padding-bottom: 5px;
+      outline: none;
+      background-color: $white;
+    }
+  }
+
+  .main-button {
+    width: 100%;
+
+    @media (min-width: $tablet) {
+      width: 70%;
+    }
+    height: 55px;
+    margin-top: 50px;
+    color: $white;
+    background-color: $m-blue;
+    font-size: 18px;
+    cursor: pointer;
+  }
+}
